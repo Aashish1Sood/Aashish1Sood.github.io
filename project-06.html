@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Named Entity Recognition &mdash; </title>
+<meta name="description" content="Page description goes here">
+
+<!-- ******************************************************************************************
+Set the type and color theme here - the Pro version contains additional themes -->
+<link href="css/hawthorne_type2_color4.css" rel="stylesheet">
+<!--  ************************************************************************************* -->
+
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="js/vendor/modernizr.js"></script>
+
+</head>
+<body>
+
+<div class="top-border"></div>
+
+<div class="row">
+	<div class="small-12 medium-12 large-12 small-centered columns">
+		<header>
+			<h1>Aashish Sood</a></h1>
+			<h2>SOFTWARE ENGINEER</a></h2>
+			<!--
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="Your Name Here" /></a>
+			</div>
+			-->
+		</header>
+	</div>
+	<div class="small-12 medium-12 large-12 small-centered columns">
+		<nav>
+			<ul class="inline-list-custom">
+				<li><a href="index.html">About Me</a></li>
+				<li><a href="projects.html">Selected Work</a></li>
+				<li><a href="Blog.html">Blog</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-12 medium-7 large-7 columns">
+		<h2>Named Entity Recognition of Tweets</h2>
+		<br>
+		<p>
+		<b>Internet Of Things</b> has led to the realization of ubiquitous computing and has enabled the practical existence of concepts such as Smart Home, Smart City, Smart Garage etc. Similar concepts of interweaving different objects to act as a single logical unit being connected to the internet can also be used to security systems which can detect intrusions and alert stakeholders as well as surroundings at real-time. This coursework group-project aims to implement an end-to-end IoT solution for an intrusion detection system.
+		</p>
+		<p>
+		As a part of this group project we used <b><a href="https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor?view=all">PIR</a></b> (Passive Infra-Red Sensors) for detecting movements. PIR sensors have sensitivity range upto 20 feet(6 metres) and are used in automated doors,etc. Also since it is cheap and can easily be integrated with a Photon particle, it was our primary choice for a sensor.
+		</p>
+		<p>
+		We used a <b><a href="https://www.particle.io">Particle Photon</a></b> as the IoT hardware which gave us access to IoT device cloud and acted as the primary IoT platform. We further connected the motion sensor with the particle Photon and then used the particle programming to publish messages (0-2047 if no motion is detected and 2048-4095 if motion is detected) to a local <b><a href="https://mosquitto.org">Mosquitto MQTT</a></b> topic. We also used a LED with the particle photon which would light up if motion was detected or otherwise remain off. The entire setup can be seen below.
+		</p>
+		<p>
+		Finally we designed a Java web application that would subscribe data from the Mosquitto topic and then based on the type of data generate alerts in a web page. To complete the end-to-end system design we also went ahead and implemented email features using SMTP to send emails to the user based on intrusion detection. The source code for the application can be found <a href="https://github.com/imjuoy/Intrusion-Detection-System-using-Passive-Infrared-Sensors-and-SMTP">here</a>.
+		</p>
+		<p>
+	    <h3>Technologies Used:</h3>
+	    <ul>
+	    <li>Python</li>
+	    </ul>
+		</p>
+	</div>
+	<div class="small-12 medium-5 large-5 columns">
+		<div class="lined-list">
+			<ul>
+				<li><strong>Role:</strong> Developer</li>
+				<li><strong>Event:</strong> Coursework </li>
+				<li><strong>Location:</strong> University of Southern California, Los Angeles</li>
+				<li><strong>Year:</strong> Fall 2017</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-12 medium-12 large-12 columns">
+		<hr class="project-detail-hr" />
+
+		<!-- Begin project image -->
+		<!-- End project image -->
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-12 medium-12 large-12 columns">
+		<p class="back-to-top-holder"><a class="back-to-top"><i class="fa fa-chevron-circle-up fa-3x"></i></a></p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-12 medium-12 large-12 columns">
+		<footer>
+			<ul>
+				<li>&copy; 2018 <a href="index.html">Aashish Sood</a>. All rights reserved.</li>
+				<li><a href="mailto:sooda@usc.edu"><i class="fa fa-envelope-o"></i> sooda@usc.edu</a></li>
+
+				<!-- *****************************************************************************************
+				The "Powered by Type & Grids" link in the footer is required in the Free version
+				typeandgrids.com/pirates -->
+				<li>Powered by <a href="http://www.typeandgrids.com" target="_blank">Type &amp; Grids</a></li>
+				<!--  ************************************************************************************ -->
+
+			</ul>
+			<center>
+			<div class='links fade-in two'>
+				<a href='mailto:sooda@usc.edu'>
+					<span class="fa-stack">
+						<i class='fa fa-circle fa-stack-2x'></i>
+						<i class='fa fa-envelope fa-stack-1x fa-inverse'></i>
+					</span>
+				</a>
+				<a href='https://github.com/Aashish1Sood'>
+					<span class="fa-stack">
+						<i class='fa fa-circle fa-stack-2x'></i>
+						<i class='fa fa-github fa-stack-1x fa-inverse'></i>
+					</span>
+				</a>
+				<a href='https://www.linkedin.com/in/aashish-sood-36064126/'>
+					<span class="fa-stack">
+						<i class='fa fa-circle fa-stack-2x'></i>
+						<i class='fa fa-linkedin fa-stack-1x fa-inverse'></i>
+					</span>
+				</a>
+    </div>
+    </center>
+		</footer>
+	</div>
+</div>
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/hawthorne.js"></script>
+
+</body>
+</html>
