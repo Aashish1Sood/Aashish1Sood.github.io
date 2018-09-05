@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title> Machine Translation Evaluation &mdash;</title>
+<title>Text Classification &mdash; </title>
 <meta name="description" content="Page description goes here">
 
 <!-- ******************************************************************************************
@@ -45,28 +45,29 @@ Set the type and color theme here - the Pro version contains additional themes -
 
 <div class="row">
 	<div class="small-12 medium-7 large-7 columns">
-		<h2>Machine Translation Evaluation using ROSE Metric</h2>
+		<h2>Authorship Identification using Naive Bayes Text Classification</h2>
 		<br>
 		<h3>Objective</h3>
-		<p>To improve accuracy of automatic evaluation of Machine Translated sentences.
+		<p>
+			Train a classifier which could identify the authorship of given text.
 		</p>
 		<h3>What I did?</h3>
 		<ul>
-				<li>Implemented the ROSE Machine Translation metric in Python.</li>
-				<li>Tested multiple classifiers, such as, Pairwise Ranking SVM with RBF kernel for classification.</li>
-				<li>Implemented a 3-layer fully connected Neural Net architecture using Tensorflow to use as a classifier for evaluation. </li>
-				<li>Improved the accuracy of the classifier by using semantic features (extracted using spacy package) at later layers of neural net.</li>
+            <li>Trained a Naive Bayes Classifier using Bag Of Words approach to identify if a line was written by Shakespeare or Emily Bronte.</li>
+            <li>Analyzed the training data using shell commands such as awk to check the top frequency words-sans stop words.</li>
+            <li>Featurized the text using various lexical features such as<ul><li>punctuation perline.</li><li>average length of line.</li><li> the average length of words.<li>Sentences beginning with  prepositions/conjunctions.</li><li>Presence of Hyphenated words.</li><li></li></ul></li>
 </ul>
 		<h3>Results</h3>
 		<p>
 			<ul>
-				<li>Improved the test accuracy from baseline of 52%(Simple METEOR) to 56%</li>			</ul>
+                <li>Acheived an accuracy of 88% on test set.</li><li>Identify certain grammatical patterns differentiating two authors such as:-<ul><li>Shakespeares sentences were on average 1.5 times of Emily Bronte's.</li><li>Emily Bronte used punctuations with more frequency. </li></ul></li></ul>
 		</p>
 	    <h3>Technologies Used:</h3>
 	    <ul>
 	    <li>Python</li>
-	    <li>TensorFlow</li>
 	    <li>scikit-learn</li>
+            <li>matplotlib</li>
+            <li>Bash shell</li>
 	    </ul>
 		</p>
 	</div>
@@ -88,7 +89,7 @@ Set the type and color theme here - the Pro version contains additional themes -
 
 		<!-- Begin project image -->
 		<!-- End project image -->
-		</div>
+	</div>
 </div>
 
 <div class="row">
