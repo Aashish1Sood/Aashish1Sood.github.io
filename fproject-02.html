@@ -46,38 +46,30 @@ Set the type and color theme here - the Pro version contains additional themes -
 
 <div class="row">
 	<div class="small-12 medium-7 large-7 columns">
-		<h2>Event Search application  with NodeJS</h2>
+		<h2>Event Search application with NodeJS</h2>
 		<br>
 		<h3>Objective</h3>
 		<p>
 			<ul>
-				<li>Build an android app for searching events using Ticketmaster API</li>
-				<li>Get familiar with handling Async tasks and third party libraries such as Volley and Picasso </li>
+				<li>Build an Event search website with responsive design using NodeJS backend</li>
+				<li>Use AngularJS/jQuery for animations/effects </li>
 			</ul>
 		</p>
 		<h3>What I did?</h3>
 		<p>
 			<ul>
-				<li>Developed python scripts to scrape websites and fetch data fron REST API's to capture four datasets </li>
-				<li>Developed python scripts to scrape websites and fetch data fron REST API's to capture four datasets :-</li>
-					<ul style="list-style-type:none">
-						<li>- Airports Dataset ( http://ourairports.com/data/airports.csv)</li>
-						<li>- Meteorite Landings Dataset: Mime Type – Application/JSON<br>
-							&nbsp;&nbsp;<i>Source</i> - https://data.nasa.gov/resource/y77d-th95.json?$limit=50000</li>
-
-						<li>- Census Data: MIME Type – text/CSV<br>&nbsp;&nbsp; <i>Source</i> - https://github.com/grammakov/USA-cities-and-states?files=1</li>
-						<li>- Sci-Fi Movies: Mime Type – text/HTML<br>&nbsp;&nbsp;<i>Source</i> - https://en.wikipedia.org/wiki/Lists_of_science_fiction_films</li>
-					</ul>
-				<li>Developed python scripts to capture geolocation of nearest airport to the sightings using geocode APIs. Used Memcached to limit the number of queries fired to geocode API.</li>
-				<li> Used Jaccard Similarity and Cosine Similarity to identify hidden clusters in the joined dataset. </li>
-			</ul>
-		</p>
-		<h3>What I found?</h3>
-		<p>
-			<ul>
-				<li>90% of the UFO sightings occurred where the nearest airport was less than 25 miles away.</li>
-				<li>Most sightings happened in rural areas.</li>
-				<li>Highly sighted UFO locations are sparsely populated.</li>
+				<li>Developed a single page web application using AngularJS framework for UI and NodeJS at backend</li>
+				<li>Implemented Autocomplete search using Angular Material's autocomplete element which fetched data from TicketMaster's suggest API.</li>
+				<li>Implemented form validations using Angular directives.</li>
+				<li>Used HTML5 local storage key value store to implement Favourites feature.</li>
+				<li>Used Bootstrap3 framework to implement Responsive Web Design features.</li>
+				<li>Used jQuery promises to implement Async calls to 5 different APIs described below</li>
+				<ul>
+						<li>First Tab consists of event information fectched from TicketMaster's Event Details API.</li>
+						<li>Second tab consists Artist/Team's pictures fetched from Google custom search API and Artist's information fetched from Spotify API.</li>
+						<li>Third tab contains venue information fetched from TicketMaster's Venue API.</li>
+						<li>Fourth Tab consists of information about upcoming events fetched from songkick Venue API.</li>
+				</ul>
 			</ul>
 		</p>
 	    <h3>Technologies Used:</h3>
@@ -85,6 +77,7 @@ Set the type and color theme here - the Pro version contains additional themes -
 	    <li>NodeJS</li>
 	    <li>AngularJS</li>
 			<li>Bootstrap</li>
+			<li>HTML5</li>
 	    <li>AWS EC2</li>
 	    </ul>
 		</p>
@@ -104,6 +97,12 @@ Set the type and color theme here - the Pro version contains additional themes -
 <div class="row">
 	<div class="small-12 medium-12 large-12 columns">
 		<hr class="project-detail-hr" />
+		<iframe width="820" height="630"
+		src="https://www.youtube.com/embed/2gqUsysyEg0">
+		</iframe>
+		<iframe width="820" height="630"
+		src="https://www.youtube.com/embed/cezKOjXpdmk">
+		</iframe>
 
 		<!-- Begin project image -->
 		<!--<div class="project-img">
