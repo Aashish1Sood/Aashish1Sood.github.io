@@ -70,25 +70,8 @@ Set the type and color theme here - the Pro version contains additional themes -
 						<li>Fourth Tab consists of information about upcoming events fetched from songkick Venue API.</li>
 					</ul>
 				</ul>
-				<li>Developed python scripts to scrape websites and fetch data fron REST API's to capture four datasets :-</li>
-					<ul style="list-style-type:none">
-						<li>- Airports Dataset ( http://ourairports.com/data/airports.csv)</li>
-						<li>- Meteorite Landings Dataset: Mime Type – Application/JSON<br>
-							&nbsp;&nbsp;<i>Source</i> - https://data.nasa.gov/resource/y77d-th95.json?$limit=50000</li>
-
-						<li>- Census Data: MIME Type – text/CSV<br>&nbsp;&nbsp; <i>Source</i> - https://github.com/grammakov/USA-cities-and-states?files=1</li>
-						<li>- Sci-Fi Movies: Mime Type – text/HTML<br>&nbsp;&nbsp;<i>Source</i> - https://en.wikipedia.org/wiki/Lists_of_science_fiction_films</li>
-					</ul>
-				<li>Developed python scripts to capture geolocation of nearest airport to the sightings using geocode APIs. Used Memcached to limit the number of queries fired to geocode API.</li>
-				<li> Used Jaccard Similarity and Cosine Similarity to identify hidden clusters in the joined dataset. </li>
-			</ul>
-		</p>
-		<h3>What I found?</h3>
-		<p>
-			<ul>
-				<li>90% of the UFO sightings occurred where the nearest airport was less than 25 miles away.</li>
-				<li>Most sightings happened in rural areas.</li>
-				<li>Highly sighted UFO locations are sparsely populated.</li>
+				<li>Backend for this project was written in NodeJS. This essentially was integrated with Async Volley HTTP requests to backend server URL which in turn made calls to external REST APIs </li>
+				<li>Used Java ReEntrant Locks to handle data returned from multiple Async calls to five different API's. </li>
 			</ul>
 		</p>
 	    <h3>Technologies Used:</h3>
@@ -116,6 +99,10 @@ Set the type and color theme here - the Pro version contains additional themes -
 <div class="row">
 	<div class="small-12 medium-12 large-12 columns">
 		<hr class="project-detail-hr" />
+
+		<iframe width="420" height="315"
+		src="https://www.youtube.com/watch?v=b27CIWWchak">
+		</iframe>
 
 		<!-- Begin project image -->
 		<!--<div class="project-img">
